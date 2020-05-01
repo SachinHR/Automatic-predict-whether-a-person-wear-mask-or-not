@@ -22,7 +22,7 @@ while 1:
         cv2.putText(img,'Person_Without_Wearing_Mask',(x-w,y-h), font, 0.5, (11,255,255), 2, cv2.LINE_AA)   # Put text on Face Rectangle 
 ```
 
-![Image](https://banner2.cleanpng.com/20180629/bxv/kisspng-stock-photography-bigstock-portrait-indian-men-5b35fe828482e9.4087547415302652185428.jpg) 
+![Image](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevggyQRCVDapmgKgBfcswUOHykpikjyGwxc8f2mHu0An2tpU9&usqp=CAU.png) 
 
 * Image showing
 ```
