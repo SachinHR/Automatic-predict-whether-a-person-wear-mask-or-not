@@ -7,19 +7,19 @@ Real-time Face Without Mask recognition project with OpenCV and Python
 ```
 import cv2
 
-face_recognize = cv2.CascadeClassifier('haarcascade_face_without_mask.xml')                                 # Assigning XML file
+face_recognize = cv2.CascadeClassifier('haarcascade_face_without_mask.xml')   
 
-cap = cv2.VideoCapture(0)                                                                                   # Capture Video 
+cap = cv2.VideoCapture(0)       
 
 while 1: 
-    ret, img = cap.read()                                                                                   # Reading Live Video
+    ret, img = cap.read()                                        
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  
-    face_without_mask_recognized = face_recognize.detectMultiScale(gray, 1.3, 5)                            # Detecting FaceWithoutMask
+    face_without_mask_recognized = face_recognize.detectMultiScale(gray, 1.3, 5)   
 
     for (x,y,w,h) in face_without_mask_recognized:
-        face_without_mask = cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)                                  # Marking out a rectangle on Face
+        face_without_mask = cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)                 
         font = cv2.FONT_HERSHEY_SIMPLEX
-        cv2.putText(img,'Person_Without_Wearing_Mask',(x-w,y-h), font, 0.5, (11,255,255), 2, cv2.LINE_AA)   # Put text on Face Rectangle 
+        cv2.putText(img,'Person_Without_Wearing_Mask',(x-w,y-h), font, 0.5, (11,255,255), 2, cv2.LINE_AA) 
 ```
 
 ![Image](https://github.com/SachinHR/Automatic-predict-whether-a-person-wear-mask-or-not/blob/master/Image/Persons_With_Without_Mask.jpeg) 
@@ -27,8 +27,9 @@ while 1:
 * Recognised Face without mask saved on a Folder
 ```
             grey_image = cv2.imread(face_without_mask,cv2.IMREAD.GREYSCALE)
-            cv2.imwrite("C:\Home\ML_Project\A_Person_Without_Mask_detected",grey_image)                     # Saving Number Plates on a Folder
+            cv2.imwrite("C:\Home\ML_Project\A_Person_Without_Mask_detected",grey_image)    
 ```
+
 ![image](https://github.com/SachinHR/Automatic-predict-whether-a-person-wear-mask-or-not/blob/master/Image/A_person_Without_Mask.png)
 
 * Image showing
