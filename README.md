@@ -22,7 +22,14 @@ while 1:
         cv2.putText(img,'Person_Without_Wearing_Mask',(x-w,y-h), font, 0.5, (11,255,255), 2, cv2.LINE_AA)   # Put text on Face Rectangle 
 ```
 
-![Image](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRevggyQRCVDapmgKgBfcswUOHykpikjyGwxc8f2mHu0An2tpU9&usqp=CAU.png) 
+![Image](https://github.com/SachinHR/Automatic-predict-whether-a-person-wear-mask-or-not/blob/master/Image/Persons_With_Without_Mask.jpeg) 
+
+* Recognised Face without mask saved on a Folder
+```
+            grey_image = cv2.imread(face_without_mask,cv2.IMREAD.GREYSCALE)
+            cv2.imwrite("C:\Home\ML_Project\A_Person_Without_Mask_detected",grey_image)                     # Saving Number Plates on a Folder
+```
+![image](https://github.com/SachinHR/Automatic-predict-whether-a-person-wear-mask-or-not/blob/master/Image/A_person_Without_Mask.png)
 
 * Image showing
 ```
