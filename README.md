@@ -70,4 +70,3 @@ First, make sure you have installed Python 3.3+ on your machine.
 
  sudo apt install python3-opencv
 ```
-# Automatic-predict-whether-a-person-wear-mask-or-not
